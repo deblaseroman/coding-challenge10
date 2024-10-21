@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Management</title>
+</head>
+<body>
+    
+    <h2 id="productName">T-Shirt</h2>
+
+    <p>Price: $<span id="productPrice">10.00</span></p>
+    <select id="sizeSelector">
+        <option value="">Select Size</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+    <button id="purchaseButton">Purchase</button>
+
+    <div id="newProductForm" style="margin-top: 20px;">
+        <h3>Add New Product</h3>
+        <input type="text" id="newProductName" placeholder="Product Name">
+        <input type="number" id="newProductPrice" placeholder="Price">
+        <button id="addProductButton">Add Product</button>
+    </div>
+    <div id="productList"></div>
+    <script src="main.js"></script>
+</body>
+</html>
