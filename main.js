@@ -31,3 +31,12 @@ sizeSelector.addEventListener("change", function() {
         }
     }
 });
+
+purchaseButton.addEventListener("click", function() {
+    const selectedSize = sizeSelector.value;
+    if (selectedSize && product.sizes[selectedSize].inStock) {
+        alert(`Thank you for purchasing the ${product.name} in size ${selectedSize}!`);
+    } else {
+        alert("This product cannot be purchased because it is out of stock.");
+    }
+});
